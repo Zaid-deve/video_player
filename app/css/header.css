@@ -1,0 +1,76 @@
+.btn-menu-toggler {
+    height: 48px;
+    width: 48px;
+    padding: 0;
+}
+
+.btn-menu-toggler i {
+    font-size: 30px;
+}
+
+
+.btn-menu-toggler:active {
+    background: #eee !important;
+}
+
+.header-brand h1 {
+    font-weight: 900;
+    color: #0b1561 !important;
+}
+
+.search-box #header-search-inp {
+    height: 42px;
+}
+
+.search-bar .search-results {
+    box-shadow: 0 0 10px #ebebeb !important;
+}
+
+.header-menu {
+    box-shadow: 0 0 10px #ebebeb !important;
+    width: 200px;
+    overflow: hidden;
+    transition: all .22s ease;
+    transform: scale(0);
+    transform-origin: top right;
+    z-index: 999;
+}
+
+.btn-header-menu-toggler:focus-within+.header-menu,
+.header-menu:hover {
+    transform: scale(1);
+}
+
+.header-menu .list-group,
+.header-menu .list-group-item {
+    border: none !important;
+}
+
+.header-menu .list-group-item a {
+    display: block;
+    padding: 9px 22px;
+    color: #42455a;
+}
+
+.header-menu .list-group-item a:hover {
+    background: #ebebeb;
+}
+
+.btn-header-menu-toggler img {
+    height: 42px;
+    width: 42px;
+    object-fit: cover;
+}
+
+.nav-btn {
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    background: rgba(0, 0, 0, 0.03) !important;
+    border: none;
+}
+
+.nav-btn i {
+    font-size: 1.1em;
+    color: #949494;
+}

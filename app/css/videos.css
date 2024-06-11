@@ -1,0 +1,35 @@
+/* video uploader */
+.video-uploader-img {
+    border: 2px solid #cfcfcf;
+}
+
+.video-uploader-img img {
+    object-fit: cover;
+}
+
+.video-uploader-info {
+    line-height: 20px;
+    padding-left: 11px;
+}
+
+.video-uploader-name {
+    font-weight: 600;
+    /* font-size: .95em; */
+}
+
+.video-uploader-name>span {
+    font-size: .76em;
+    font-weight: 400;
+}
+
+/* videos grids */
+
+.recent-videos-flex {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.recent-videos-flex.div {
+    flex-shrink: 0 !important;
+}

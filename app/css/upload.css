@@ -1,0 +1,33 @@
+.upload-container i{
+    font-size: 6em;
+}
+
+.upload-container h3 {
+    font-weight: 900;
+}
+
+.upload-form-row{
+    overflow: hidden;
+}
+
+.upload-form-row.slide>div{
+    transform: translateX(-100%);
+}
+
+#uploadPrevVideo {
+    width: 100%;
+    aspect-ratio: 16/8;
+    object-fit: contain;
+}
+
+.thumbnail-container{
+    border: 2px solid #424242;
+}
+#uploadPrevThumbnail {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+}
+#loader{
+    z-index: 999;
+}

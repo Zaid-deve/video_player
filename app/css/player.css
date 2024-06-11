@@ -1,0 +1,167 @@
+main {
+    padding-top: 80px;
+}
+
+
+.loader-top{
+    z-index: 1004;
+}
+.video-controls {
+    z-index: 999;
+}
+
+.video-controls .player-btn {
+    border: none !important;
+    background: rgba(255, 255, 255, .3) !important;
+    color: #eee;
+}
+
+.video-controls .player-btn:hover {
+    opacity: .5;
+}
+
+.video-control-btns .btn-play-video {
+    transform: scale(1.75);
+    display: none;
+}
+
+.buffer-icon svg {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.video-control-btns .buffer-icon.d-none+.btn-play-video {
+    display: block;
+}
+
+/* video */
+.video-container {
+    max-height: calc(100vh - 80px);
+    min-height: 280px;
+    height: 100%;
+}
+
+.video-container #video-src {
+    object-fit: contain;
+    background: #1f0505 !important;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* progress bar */
+
+.progress-outer {
+    height: 6px;
+    transition: all .1s linear;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.progress-outer .progress-end {
+    background: rgba(255, 255, 255, .3);
+}
+
+.progress-outer:hover {
+    height: 9px;
+}
+
+.progress-inner {
+    border-radius: inherit;
+    background: #b72222;
+    width: 0;
+    z-index: 1;
+    position: relative;
+    transition: all .22s ease;
+}
+
+.progress-inner::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 8px);
+    transform: translateY(-50%);
+    background: inherit;
+    border-radius: 50%;
+    transition: all .1s ease;
+}
+
+.progress-outer:hover .progress-inner::after {
+    padding: 8px;
+}
+
+/* video controls */
+
+.video-time-control span {
+    font-weight: 300;
+}
+
+/* video uploader */
+.video-uploader-img {
+    border: 2px solid #cfcfcf;
+}
+
+.video-uploader-img img {
+    object-fit: cover;
+}
+
+.video-uploader-info {
+    line-height: 20px;
+    padding-left: 11px;
+}
+
+.video-uploader-name {
+    font-weight: 600;
+    /* font-size: .95em; */
+}
+
+.video-uploader-name>span {
+    font-size: .76em;
+    font-weight: 400;
+}
+
+.video-title {
+    font-size: .95em;
+    line-height: 20px;
+}
+
+.video-description.showless {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* query md */
+
+@media(max-width:560px) {
+    .video-container {
+        min-height: 220px;
+        max-height: 250px;
+    }
+
+    .player-btn i {
+        font-size: .88em;
+    }
+
+    .btn-req-fullscreen {
+        padding-top: 3px !important;
+    }
+
+    .btn-req-fullscreen i {
+        font-size: .7em;
+    }
+
+    .video-control-btns .btn {
+        font-size: .9em;
+    }
+}
